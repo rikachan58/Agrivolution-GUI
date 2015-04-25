@@ -13,16 +13,15 @@ namespace Agrivolution
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            UserID.Value = User.Identity.Name;
         }
 
         protected void CreateMCU(object sender, EventArgs a)
         {
-            try
-            {
-            string query = "INSERT INTO MCU ([MCUId], [Room], [Facility], [UserName], [GroupName], [Status], [Type])" +
-                " VALUES (@MCUId, @Room, @Facility, @UserName, @GroupName, @Status, @Type)";
-            SqlConnection con = new SqlConnection("Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-Agrivolution-20150404115207;Integrated Security=True");
+            string query = "INSERT INTO MCU ([MCUId], [Room], [Facility], [UserName], [GroupName], [FanStatus], [LightStatus], [PumpStatus], [CropType], [StartDate], [LightSchedule])" +
+                " VALUES (@MCUId, @Room, @Facility, @UserName, @GroupName, @FanStatus, @LightStatus, @PumpStatus, @CropType, @StartDate, @LightSchedule)";
+            string conString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            SqlConnection con = new SqlConnection(conString);
             
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@MCUId", ID_text.Text);
@@ -30,17 +29,29 @@ namespace Agrivolution
             cmd.Parameters.AddWithValue("@Facility", facilityList.Text);
             cmd.Parameters.AddWithValue("@UserName", User.Identity.Name);
             cmd.Parameters.AddWithValue("@GroupName", groupList.Text);
-            cmd.Parameters.AddWithValue("@Status", "0");
-            cmd.Parameters.AddWithValue("@Type", typeList.Text);
+            cmd.Parameters.AddWithValue("@FanStatus", "0");
+            cmd.Parameters.AddWithValue("@LightStatus", "0");
+            cmd.Parameters.AddWithValue("@PumpStatus", "0");
+            cmd.Parameters.AddWithValue("@CropType", CropType.Text);
+            cmd.Parameters.AddWithValue("@StartDate", DateTime.Today);
+            cmd.Parameters.AddWithValue("@LightSchedule", lightHours.Text);
 
+            //Taras To Do List:
+            //check for correct values for MCUId and LightSchedule
+            //add choice for new values for drop down lists
+            //check for correct values for new values for drop down lists
+            //add message saying everything was saved and clear fields
+            //redirect to new mcu page?
+            //uncomment try and catch
 
-            con.Close();
+            //try 
+           // {
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
-            }
-            catch(SqlException e)
-            { Console.Write(e.ToString()); }
+           // }
+          //  catch(SqlException e)
+          //  { Console.Write(e.ToString()); }
         }
     }
 }

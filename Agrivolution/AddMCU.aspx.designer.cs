@@ -13,6 +13,15 @@ namespace Agrivolution {
     public partial class AddMCU {
         
         /// <summary>
+        /// UserID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField UserID;
+        
+        /// <summary>
         /// mcuIdLabel control.
         /// </summary>
         /// <remarks>
@@ -49,13 +58,13 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.DropDownList facilityList;
         
         /// <summary>
-        /// newfacility control.
+        /// Facility control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource newfacility;
+        protected global::System.Web.UI.WebControls.SqlDataSource Facility;
         
         /// <summary>
         /// roomLabel control.
@@ -76,13 +85,13 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.DropDownList roomList;
         
         /// <summary>
-        /// newRoom control.
+        /// Room control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource newRoom;
+        protected global::System.Web.UI.WebControls.SqlDataSource Room;
         
         /// <summary>
         /// groupLabel control.
@@ -103,40 +112,49 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.DropDownList groupList;
         
         /// <summary>
-        /// GroupNames control.
+        /// Group control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource GroupNames;
+        protected global::System.Web.UI.WebControls.SqlDataSource Group;
         
         /// <summary>
-        /// typeLabel control.
+        /// CropTypeLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label typeLabel;
+        protected global::System.Web.UI.WebControls.Label CropTypeLabel;
         
         /// <summary>
-        /// typeList control.
+        /// CropType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList typeList;
+        protected global::System.Web.UI.WebControls.TextBox CropType;
         
         /// <summary>
-        /// newType control.
+        /// lightLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource newType;
+        protected global::System.Web.UI.WebControls.Label lightLabel;
+        
+        /// <summary>
+        /// lightHours control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox lightHours;
         
         /// <summary>
         /// addButton control.
