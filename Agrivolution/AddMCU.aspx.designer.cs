@@ -31,6 +31,24 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.Label mcuIdLabel;
         
         /// <summary>
+        /// IdRequire control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator IdRequire;
+        
+        /// <summary>
+        /// IdFormatCheck control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator IdFormatCheck;
+        
+        /// <summary>
         /// ID_text control.
         /// </summary>
         /// <remarks>
@@ -56,6 +74,15 @@ namespace Agrivolution {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList facilityList;
+        
+        /// <summary>
+        /// newFacility control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox newFacility;
         
         /// <summary>
         /// Facility control.
@@ -85,6 +112,15 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.DropDownList roomList;
         
         /// <summary>
+        /// newRoom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox newRoom;
+        
+        /// <summary>
         /// Room control.
         /// </summary>
         /// <remarks>
@@ -112,6 +148,15 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.DropDownList groupList;
         
         /// <summary>
+        /// newGroup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox newGroup;
+        
+        /// <summary>
         /// Group control.
         /// </summary>
         /// <remarks>
@@ -130,6 +175,15 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.Label CropTypeLabel;
         
         /// <summary>
+        /// cropRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator cropRequired;
+        
+        /// <summary>
         /// CropType control.
         /// </summary>
         /// <remarks>
@@ -139,22 +193,103 @@ namespace Agrivolution {
         protected global::System.Web.UI.WebControls.TextBox CropType;
         
         /// <summary>
-        /// lightLabel control.
+        /// LOnLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lightLabel;
+        protected global::System.Web.UI.WebControls.Label LOnLabel;
         
         /// <summary>
-        /// lightHours control.
+        /// lightOnRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lightHours;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator lightOnRequired;
+        
+        /// <summary>
+        /// LOn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LOn;
+        
+        /// <summary>
+        /// timeOfDayLightOn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox timeOfDayLightOn;
+        
+        /// <summary>
+        /// timeOnFormatCheck control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator timeOnFormatCheck;
+        
+        /// <summary>
+        /// LOffLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LOffLabel;
+        
+        /// <summary>
+        /// lightOffRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator lightOffRequired;
+        
+        /// <summary>
+        /// LOff control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LOff;
+        
+        /// <summary>
+        /// timeOfDayLightOff control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox timeOfDayLightOff;
+        
+        /// <summary>
+        /// timeOffFormatCheck0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator timeOffFormatCheck0;
+        
+        /// <summary>
+        /// messageLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label messageLabel;
         
         /// <summary>
         /// addButton control.
