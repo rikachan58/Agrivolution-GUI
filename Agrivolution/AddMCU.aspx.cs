@@ -67,6 +67,8 @@ namespace Agrivolution
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
+                    string redir = "EditMCU?MCU=" + ID_text.Text;
+                    Response.Redirect(redir);
                  }
                   catch(SqlException e)
                   { Console.Write(e.ToString()); }

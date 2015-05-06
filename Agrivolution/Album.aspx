@@ -13,5 +13,15 @@
         </SelectParameters>
     </asp:SqlDataSource>
     <br />
+    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="mcuid">
+        <ItemTemplate>
+            <tr>
+                <td>
+                    <%# Eval("Photo") %>
+                </td>
+            </tr>
+        </ItemTemplate>
+    
+    </asp:Repeater>
     <br />
 </asp:Content>
